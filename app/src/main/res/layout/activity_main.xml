@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             tools:context="com.example.carrental_mobile.MainActivity">
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="?android:dividerHorizontal"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:showDividers="middle" tools:ignore="MissingConstraints">
+
+        <LinearLayout
+                android:id="@+id/go_to_customers"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|center">
+
+                <ImageView
+                        android:id="@+id/customers_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/messages"
+                        app:srcCompat="@drawable/icons_messages" />
+
+                <TextView
+                        android:id="@+id/customers_counter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/customers_icon"
+                        android:layout_alignRight="@id/customers_icon"
+                        android:layout_marginBottom="14dp"
+                        android:layout_marginRight="-2dp"
+                        android:background="@drawable/rounded_circle"
+                        android:gravity="center"
+                        android:minHeight="20sp"
+                        android:minWidth="20sp"
+                        android:paddingBottom="1dp"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:text="10"
+                        android:textColor="#ffffffff"
+                        android:textSize="12sp"
+                        tools:visibility="invisible"/>
+
+                <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/customers_counter"
+                        android:fontFamily="sans-serif"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="14dp"
+                        android:text="Klienci"
+                        android:textSize="26sp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/go_to_cars"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|center">
+
+                <ImageView
+                        android:id="@+id/cars_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/messages"
+                        app:srcCompat="@drawable/icons_messages" />
+
+                <TextView
+                        android:id="@+id/cars_counter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/cars_icon"
+                        android:layout_alignRight="@id/cars_icon"
+                        android:layout_marginBottom="14dp"
+                        android:layout_marginRight="-2dp"
+                        android:background="@drawable/rounded_circle"
+                        android:gravity="center"
+                        android:minHeight="20sp"
+                        android:minWidth="20sp"
+                        android:paddingBottom="1dp"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:text="10"
+                        android:textColor="#ffffffff"
+                        android:textSize="12sp"
+                        tools:visibility="invisible"/>
+
+                <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/cars_counter"
+                        android:fontFamily="sans-serif"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="14dp"
+                        android:text="Samochody"
+                        android:textSize="26sp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/go_to_rental"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:baselineAligned="true"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|center">
+
+                <ImageView
+                        android:id="@+id/call_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/call"
+                        app:srcCompat="@drawable/icons_call" />
+
+                <TextView
+                        android:id="@+id/rental_counter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/call_icon"
+                        android:layout_alignRight="@id/call_icon"
+                        android:layout_marginBottom="14dp"
+                        android:layout_marginRight="-2dp"
+                        android:background="@drawable/rounded_circle"
+                        android:gravity="center"
+                        android:minHeight="20sp"
+                        android:minWidth="20sp"
+                        android:paddingBottom="1dp"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:text="10"
+                        android:textColor="#ffffffff"
+                        android:textSize="12sp"
+                        android:visibility="invisible"
+                        tools:visibility="invisible" />
+
+                <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/rental_counter"
+                        android:fontFamily="sans-serif"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="14dp"
+                        android:text="Wypożyczenia"
+                        android:textSize="26sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <LinearLayout
+                android:id="@+id/go_to_favourite"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:baselineAligned="true"
+                android:orientation="horizontal"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|center">
+
+                <ImageView
+                        android:id="@+id/favourite_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/call"
+                        app:srcCompat="@drawable/icons_favourite" />
+
+                <TextView
+                        android:id="@+id/favourite_counter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/favourite_icon"
+                        android:layout_alignRight="@id/favourite_icon"
+                        android:layout_marginBottom="14dp"
+                        android:layout_marginRight="-2dp"
+                        android:background="@drawable/rounded_circle"
+                        android:gravity="center"
+                        android:minHeight="20sp"
+                        android:minWidth="20sp"
+                        android:paddingBottom="1dp"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:text="10"
+                        android:textColor="#ffffffff"
+                        android:textSize="12sp"
+                        android:visibility="invisible"
+                        tools:visibility="invisible" />
+
+                <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/favourite_counter"
+                        android:fontFamily="sans-serif"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="14dp"
+                        android:text="Ulubione"
+                        android:textSize="26sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

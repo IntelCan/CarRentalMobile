@@ -12,4 +12,12 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <string name="notifications">Powiadomienia</string>
+    <string name="messages">Wiadomości</string>
+    <string name="call">Zadzwoń</string>
+    <string name="refresh">Odśwież</string>
+    <string name="inbox">Odebrane</string>
+    <string name="outbox">Wysłane</string>
+    <string name="title_activity_customer">CustomerActivity</string>
+    <string name="title_activity_car">CarActivity</string>
 </resources>

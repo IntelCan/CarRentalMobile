@@ -1,8 +1,8 @@
 package com.example.carrental_mobile.domain.customer
 
-data class Customer(private val id: Long,
-                    private val name: String,
-                    private val surname: String,
-                    private val identityCard: String,
-                    private val driverLicense: String,
-                    private val phone: String)
+data class Customer(val id: Long,
+                    val name: String,
+                    val surname: String,
+                    val identityCard: String,
+                    val driverLicense: String,
+                    val phone: String)
